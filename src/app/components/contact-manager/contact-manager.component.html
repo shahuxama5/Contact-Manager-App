@@ -1,0 +1,80 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+      <p class="h2 text-warning fw-bold">Contacts
+        <a class="btn btn-warning btn-sm" routerLink="/contacts/add">
+          <i class="fa fa-plus-circle"></i> New
+        </a>
+      </p>
+      <p class="fst-italic">This is the best contact manager app ever</p>
+      <form >
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Search User">
+              </div>
+              <div class="col">
+                <input type="submit" class="btn btn-outline-dark" value="Search">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Loading spinner -->
+
+<div *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
+<!-- Error message -->
+
+<div *ngIf="!loading && errorMessage">
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col">
+        <p class="h3 text-danger fw-bold">{{errorMessage}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card -->
+
+<div class="container mt-3" *ngIf="!loading && contacts.length > 0">
+  <div class="row" >
+    <div class="col-md-6" *ngFor="let contact of contacts">
+      <div class="card list-group-item-warning shadow-lg my-2">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-sm-4">
+              <img [src]="contact.photo" alt="icon" class="contact-img">
+            </div>
+            <div class="col-sm-7">
+              <ul class="list-group">
+                <li class="list-group-item">Name : <span class="fw-bold">{{ contact.name }}</span></li>
+                <li class="list-group-item">Email : <span class="fw-bold">{{ contact.email }}</span></li>
+                <li class="list-group-item">Mobile : <span class="fw-bold">{{ contact.mobile }}</span>
+              </ul>
+            </div>
+            <div class="col-sm-1 d-flex flex-column justify-content-center align-items-center">
+              <a class="btn btn-success my-1" routerLink="/contacts/view/{{contact.id}}">
+                <i class="fa fa-eye"></i>
+              </a>
+              <a class="btn btn-info my-1" routerLink="/contacts/edit/{{contact.id}}">
+                <i class="fa fa-pen"></i>
+              </a>
+              <button class="btn btn-danger my-1" (click)="deleteContact(contact.id)">
+                <i class="fa fa-trash-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

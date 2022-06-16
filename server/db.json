@@ -1,0 +1,70 @@
+{
+  "contacts": [
+    {
+      "id": "F67YUou87",
+      "name": "Ahsan Qureshi",
+      "company": "Tommy Corp",
+      "email": "tommy@gmail.com",
+      "title": "RCR",
+      "mobile": 3339004999,
+      "photo": "https://images.snapwi.re/a3a4/5de535a8d34ea03b556385df.w800.jpg",
+      "groupId": "3"
+    },
+    {
+      "id": "eGH67Ui9j",
+      "name": "Daniyal Anjum",
+      "company": "Follow The Vans",
+      "email": "follower@gmail.com",
+      "title": "butt",
+      "mobile": "03090078601",
+      "photo": "https://www.motortrend.com/uploads/sites/21/2016/09/D-VAN-DODGE-VAN.png?fit=around%7C875:492",
+      "groupId": "1"
+    },
+    {
+      "photo": "https://im.indiatimes.in/content/2020/Feb/Rohit_5e3a8f60121c2.jpg?w=725&h=487",
+      "name": "Usama Mehmood",
+      "email": "usama@gmail.com",
+      "mobile": 3152845322,
+      "company": "Qavi",
+      "title": "rahit",
+      "groupId": "4",
+      "id": "xgvWC6i"
+    },
+    {
+      "name": "Hamza JG",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ecole_de_Goya%2C_Nain_assis_%2819%C3%A8me_si%C3%A8cle%29.jpg/800px-Ecole_de_Goya%2C_Nain_assis_%2819%C3%A8me_si%C3%A8cle%29.jpg",
+      "email": "jg@gmail.com",
+      "mobile": 3390956120,
+      "company": "Telic",
+      "title": "kudo",
+      "groupId": "2",
+      "id": "mFPER3M"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    },
+    {
+      "id": "5",
+      "name": "Community"
+    },
+    {
+      "id": "6",
+      "name": "Social"
+    }
+  ]
+}
